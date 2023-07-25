@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imgSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.animalImg {
+  width: 100%;
+}
+
+.nextAnimalImgBtn {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.animationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base styles for the title */
+.siteTitle {
+  text-align: center;
+  font-size: 48px; /* Adjust font size as needed */
+  font-family: "Arial", sans-serif; /* Choose an appropriate font */
+  color: #ff69b4; /* Choose your desired text color */
+  display: inline-block;
+  padding: 0 10px;
+  background: linear-gradient(
+    45deg,
+    #ff69b4,
+    #00bfff,
+    #ff1493
+  ); /* Use your desired gradient colors */
+  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  animation: bubble 3s infinite;
+}
+
+/* Curving the text */
+.siteTitle {
+  transform: skewY(-10deg); /* Adjust skew value for desired curvature */
+  display: inline-block;
+}
+
+/* Bubble animation */
+@keyframes bubble {
+  0%,
+  100% {
+    transform: scale(1); /* Initial and final state */
+  }
+  50% {
+    transform: scale(1.1); /* Bubble effect at 50% */
+  }
+}
