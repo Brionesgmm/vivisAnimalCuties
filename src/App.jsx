@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Photo from "./components/Photo";
 
 function App() {

@@ -4,9 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(/cartoonAnimalBg.png);
+  background-position: center;
+  background-size: cover;
+}
+
 .imgSection {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .animalImg {
@@ -14,8 +22,9 @@
 }
 
 .nextAnimalImgBtn {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   font-size: 2rem;
+  border-radius: 5px;
   background: -webkit-linear-gradient(
     to right,
     red,
@@ -42,6 +51,11 @@
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+.nextAnimalImgBtn:active {
+  transform: scale(1.1);
+  overflow-x: hidden;
 }
 
 .animationContainer {

@@ -91,7 +91,7 @@ const Photo = () => {
       />
 
       <button onClick={nextAnimalImage} className="nextAnimalImgBtn">
-        Next Animal
+        Next Cute Animal!
       </button>
     </div>
   );
