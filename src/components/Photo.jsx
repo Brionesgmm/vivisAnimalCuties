@@ -12,7 +12,7 @@ const Photo = () => {
   //     "FCHHpjKZb6AxS6BCzYSglJdx2ItT9KuYUtBPruiJkE9EypHJErJcbzPv"
   //   );
 
-  const query = "Cute Animals";
+  const query = "Animals";
 
   //   async function fetchPhoto() {
   //     setIsLoadingImage(true);
